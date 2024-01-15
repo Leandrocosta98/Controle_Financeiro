@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle Financeiro</h1>
+    </header>
+    <section>
+        <div id="tkt">
+            <div id="ent">Entrada:
+                <p id="ve">0.00</p>
+            </div>
+            <div id="sd">Saida:
+                <p id="vs">0.00</p>
+            </div>
+            <div id="sld">Saldo:
+                <p id="sl">0.00</p>
+            </div>
+        </div>
+        <br>
+    
+        <div id="bot">
+            <p>Descrição: <input type="text" required id="descrip"></p>
+            <p>Valor R$: <input type="number" required id="ent"></p>
+            <br>
+            <input type="radio" name="tipo" id="en">Entrada
+            <input type="radio" name="tipo"  id="sai" >Saida
+            <input id="enviar" type="button"  value="Adicionar" onclick="adicionar()">
+        </div>
+
+        <div id="select"> 
+            <select name="lista" id="list" size="6"></select>
+        </div>
+
+        <div id="res"></div>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
