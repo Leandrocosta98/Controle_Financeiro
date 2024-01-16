@@ -53,7 +53,8 @@ function adicionarEntradaSaida() {
       }).format(entradaConvertida)}`;
       sel.appendChild(item);
 
-      sld.textContent = new Intl.NumberFormat('pt-br', {style:'currency', currency:'BRL'}).format(saldoConvertido)
+      sld.textContent = saldoConvertido;
+
 
     desc.value = ""
     ent.value = ""
